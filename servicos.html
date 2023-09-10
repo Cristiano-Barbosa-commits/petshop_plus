@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petshop Plus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  </head>
+  <body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="Index.html" href="index.html">Home</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="racaoCachorro.html">Cachorro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="racaoGatos.html">Gatos</a>
+        </li>
+      </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   
+        
+        <div class="cadastro">
+            <form action="https://formsubmit.co/cristianocomceicao@gmail.com" method="POST">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label>Nome:</label>
+                    <input type="text" name="Nome" placeholder="Nome completo" class="class_input_name" required>
+                    <br><br>
+                    <label>CPF:</label>
+                    <input type="text" name="CPF" placeholder="Digite o CPF" pattern="[0-9]{11}" required>
+                    <label>Data de Nascimento:</label>
+                    <input type="text" name="Nascimento" placeholder="DDMMAAAA" pattern="[0-9]{8}" required>
+                    <label>Masculino</label>
+                    <input type="radio" value="masculino">
+                    <label>Feminino</label>
+                    <input type="radio" value="feminino">
+                    <br><br>
+                    <label>Estado Civil:</label>
+                    <select name="EstadoCivil">
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viuvo(a)</option>
+                        <option value="união estável">União Estável</option>
+                        <option value="outro">Outros</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>                
+                    <legend>Endereço</legend>
+                    <label>Logradouro:</label>
+                    <input type="text" name="logradouro" placeholder="Nome da rua" required>
+                    <label>Número:</label>
+                    <input type="text" name="numero" placeholder="Número" required>
+                    <label>Complemento:</label>
+                    <input type="text" name="complemento" placeholder="Apto, Bloco, Prédio">
+                    <br>
+                    <br>
+                    <label>Estado:</label>
+                    <select name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="GO">Goias</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RR">Roraima</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergie</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <label>Cidade:</label>
+                    <input type="text" name="cidade" placeholder="Informe a cidade" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Dados do Pet</legend>
+                    <label>Nome do pet:</label>
+                    <input type="text" name="nomepet" placeholder="Nome do pet" required>
+                    <label>Raça:</label>
+                    <input type="text" name="raça" placeholder="Informe a raça" required>
+                    <label>Data de nascimento:</label>
+                    <input type="text" name="nascimento_pet" placeholder="DDMMAAAA" pattern="[0-9]{8}" required>
+                    <label>Sexo:</label>
+                    <select name="sexopet">
+                        <option value="pet_macho">Macho</option>
+                        <option value="pet_femea">Fêmea</option>
+                    </select>
+                </fieldset>
+                <br><br>
+                <center>
+                <label>Envio dos dados cadastrais</label>
+                <input class="class_botao_enviar" type="submit">
+                </center>
+                <br><br>
+            </form>
+        </div>    
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+        
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+    
+        </div>
+        <div class="footerNav">
+            <ul role="list">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Trabalhe Conosco</a></li>
+            </ul>
+    
+        </div>
+    
+        <div class="footerButtom">
+            <p>Copyright &copy;2023 Desenvolvido por <span class="Designed">Cristiano Barbosa</span></p>
+        </div>
+    </footer>
+
+</body>
